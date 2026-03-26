@@ -4,9 +4,11 @@ import { motion } from "framer-motion";
 import { useTheme } from "@/ThemeProvider";
 import { Sun, Moon, Github, Linkedin } from "lucide-react";
 import data from "@/data/user.json";
+import user from "@/data/about.json";
 
 export default function Hero() {
   const { theme, toggleTheme } = useTheme();
+  const hasAbout = user.about?.trim();
 
   return (
     <section className="relative flex flex-col items-center justify-center h-screen bg-gray-100 text-black dark:bg-gray-950 dark:text-white overflow-hidden">
@@ -46,7 +48,19 @@ export default function Hero() {
         {data.tagline}
       </p>
 
-      {/* Social Links */}
+    <br></br>
+ {hasAbout && (
+        <motion.p
+          className="text-lg max-w-2xl text-center leading-relaxed text-gray-700 dark:text-gray-300"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+        >
+          {user.about}
+        </motion.p>
+      )}
+
+        {/* Social Links */}
      <div className="mt-4 flex gap-6 relative z-10">
   {data.github?.trim() && (
     <a href={data.github} target="_blank" rel="noopener noreferrer">
