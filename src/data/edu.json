@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "degree": "Master of Technology in Computer Science",
+    "university": "ABC University",
+    "duration": "July 20XX – Present",
+    "progress": 80,
+    "status": "80% Completed",
+    "color": "blue"
+  },
+  {
+    "id": 2,
+    "degree": "Bachelor of Technology in Computer Science",
+    "university": "XYZ University",
+    "duration": "August 20XX – May 20XX",
+    "progress": 100,
+    "status": "Completed 🎓",
+    "color": "green"
+  }
+]

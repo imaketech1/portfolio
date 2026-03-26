@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "company": "Company Current",
+    "role": "Full Stack Developer",
+    "duration": "August 20XX – Present",
+    "side": "left",
+    "color": "blue",
+    "points": [
+      "Developed responsive and accessible mobile applications.",
+      "Optimized load times and performance for a seamless user experience.",
+      "Enhanced security and scalability of applications."
+    ]
+  },
+  {
+    "id": 2,
+    "company": "Company Awesome",
+    "role": "Software Engineer",
+    "duration": "July 20XX – August 20XX",
+    "side": "right",
+    "color": "purple",
+    "points": [
+      "Developed responsive and accessible web applications.",
+      "Optimized website load times and performance.",
+      "Enhanced security and scalability of applications."
+    ]
+  },
+   {
+    "id": 3,
+    "company": "Company OLDDDD",
+    "role": "Software Engineer",
+    "duration": "July 20XX – June 20XX",
+    "side": "right",
+    "color": "purple",
+    "points": [
+      "Developed responsive and accessible web applications.",
+      "Optimized website load times and performance.",
+      "Enhanced security and scalability of applications."
+    ]
+  }
+]

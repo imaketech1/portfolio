@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import data from "@/data/about.json";
 
 export default function About() {
   return (
@@ -39,7 +40,7 @@ export default function About() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
       >
-        I&apos;m a passionate developer specializing in modern web technologies. I love building interactive and scalable applications.
+       {data.about}
         </motion.p>
     </section>
   );

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useTheme } from "@/ThemeProvider";
 import { Sun, Moon, Github, Linkedin } from "lucide-react";
+import data from "@/data/user.json";
 
 export default function Hero() {
   const { theme, toggleTheme } = useTheme();
@@ -38,32 +39,27 @@ export default function Hero() {
 
       {/* Hero Text */}
       <h1 className="text-5xl font-bold">
-        Hi, I&apos;m <span className="text-blue-400">Your Name</span>
+        Hi, I&apos;m <span className="text-blue-400">{data.name}</span>
       </h1>
 
       <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-        I build awesome webapps.
+        {data.tagline}
       </p>
 
       {/* Social Links */}
-      <div className="mt-4 flex gap-6 relative z-10">
-        <a
-          href="https://github.com/imaketech1"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition"
-        >
-          <Github size={32} />
-        </a>
-        <a
-          href="https://linkedin.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-gray-600 dark:text-gray-300 hover:text-blue-600 transition"
-        >
-          <Linkedin size={32} />
-        </a>
-      </div>
+     <div className="mt-4 flex gap-6 relative z-10">
+  {data.github?.trim() && (
+    <a href={data.github} target="_blank" rel="noopener noreferrer">
+      <Github size={32} />
+    </a>
+  )}
+
+  {data.linkedin?.trim() && (
+    <a href={data.linkedin} target="_blank" rel="noopener noreferrer">
+      <Linkedin size={32} />
+    </a>
+  )}
+</div>
     </section>
   );
 }
