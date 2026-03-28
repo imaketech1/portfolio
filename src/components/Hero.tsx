@@ -2,14 +2,24 @@
 
 import { motion } from "framer-motion";
 import { useTheme } from "@/ThemeProvider";
-import { Sun, Moon, Github, Linkedin } from "lucide-react";
+import { Sun, Moon, Github, Linkedin, Globe } from "lucide-react";
 import data from "@/data/user.json";
 import user from "@/data/about.json";
 
 export default function Hero() {
   const { theme, toggleTheme } = useTheme();
   const hasAbout = user.about?.trim();
+  const isValidUrl = (url?: string) => {
+    if (!url || url.trim() === "") return false;
 
+    try {
+      new URL(url);
+      return true;
+    } catch {
+      return false;
+    }
+  };
+  const hasLink = isValidUrl(data.link);
   return (
     <section className="relative flex flex-col items-center justify-center h-screen bg-gray-100 text-black dark:bg-gray-950 dark:text-white overflow-hidden">
       {/* Animated Background */}
@@ -62,6 +72,14 @@ export default function Hero() {
 
         {/* Social Links */}
      <div className="mt-4 flex gap-6 relative z-10">
+      {hasLink && (
+  <a
+    href={data.link}
+    target="_blank"
+    rel="noopener noreferrer"
+  ><Globe size={32} /> 
+  </a>
+)}
   {data.github?.trim() && (
     <a href={data.github} target="_blank" rel="noopener noreferrer">
       <Github size={32} />

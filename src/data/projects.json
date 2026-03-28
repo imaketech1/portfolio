@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Project Alpha",
+    "description": "A modern web application designed to streamline user interactions and enhance productivity.",
+    "emoji": "🚀",
+    "link":"https://example.com/project-alpha"
+  },
+  {
+    "id": 2,
+    "name": "DevConnect",
+    "description": "A platform that fosters collaboration and knowledge sharing among developers.",
+    "emoji": "🤝",
+    "link":"https://example.com/devconnect"
+  },
+  {
+    "id": 3,
+    "name": "TaskFlow",
+    "description": "A task management app with intuitive UI and real-time synchronization.",
+    "emoji": "📋",
+    "link":""
+
+  },
+  {
+    "id": 4,
+    "name": "ShopEase",
+    "description": "An e-commerce solution providing seamless shopping experiences for users.",
+    "emoji": "🛒",
+    "link": ""
+  },
+  {
+    "id": 5,
+    "name": "CodeVault",
+    "description": "A secure online repository for storing and managing code snippets.",
+    "emoji": "🔐",
+    "link":""
+  }
+]
