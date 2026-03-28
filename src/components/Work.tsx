@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import data from "@/data/work.json";
 
 type WorkItem = {
@@ -15,7 +15,7 @@ type WorkItem = {
 };
 
 export default function Work() {
-  const [workItems, setWorkItems] = useState<WorkItem[]>(data as WorkItem[]);
+const [workItems] = useState<WorkItem[]>(data as WorkItem[]);
 
   // sort by id
   const orderedItems = [...workItems].sort((a, b) => a.id - b.id);
