@@ -12,7 +12,7 @@
     "id": 2,
     "degree": "Bachelor of Technology in Computer Science",
     "university": "XYZ University",
-    "duration": "August 20XX – May 20XX",
+    "duration": "",
     "progress": 100,
     "status": "Completed 🎓",
     "color": "green"
