@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { FaEnvelope, FaLinkedin, FaGithub, FaHeart, FaCodeBranch, FaStar } from "react-icons/fa";
+import { FaEnvelope, FaHeart, FaCodeBranch, FaStar } from "react-icons/fa";
 import data from "@/data/user.json";
 
 export default function Contact() {
