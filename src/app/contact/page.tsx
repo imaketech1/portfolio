@@ -151,7 +151,7 @@ ${form.message}`;
       <div className="mt-10 flex flex-col items-center space-y-3">
         <p className="flex items-center text-gray-500">
           Made with <FaHeart className="text-red-500 mx-1" />  <a href="https://github.com/imaketech1" target="_blank">
-          by imaketech © 🚀 </a>
+          by imaketech </a>
         </p>
 
         {/* GitHub Fork & Star */}
